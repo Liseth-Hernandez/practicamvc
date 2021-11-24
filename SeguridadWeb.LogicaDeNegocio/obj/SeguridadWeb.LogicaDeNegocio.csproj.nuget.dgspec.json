@@ -1,0 +1,187 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.LogicaDeNegocio\\SeguridadWeb.LogicaDeNegocio.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.AccesoADatos\\SeguridadWeb.AccesoADatos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.AccesoADatos\\SeguridadWeb.AccesoADatos.csproj",
+        "projectName": "SeguridadWeb.AccesoADatos",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.AccesoADatos\\SeguridadWeb.AccesoADatos.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.AccesoADatos\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.EntidadesDeNegocio\\SeguridadWeb.EntidadesDeNegocio.csproj": {
+                "projectPath": "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.EntidadesDeNegocio\\SeguridadWeb.EntidadesDeNegocio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0-preview.2.21154.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.EntidadesDeNegocio\\SeguridadWeb.EntidadesDeNegocio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.EntidadesDeNegocio\\SeguridadWeb.EntidadesDeNegocio.csproj",
+        "projectName": "SeguridadWeb.EntidadesDeNegocio",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.EntidadesDeNegocio\\SeguridadWeb.EntidadesDeNegocio.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.EntidadesDeNegocio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.LogicaDeNegocio\\SeguridadWeb.LogicaDeNegocio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.LogicaDeNegocio\\SeguridadWeb.LogicaDeNegocio.csproj",
+        "projectName": "SeguridadWeb.LogicaDeNegocio",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.LogicaDeNegocio\\SeguridadWeb.LogicaDeNegocio.csproj",
+        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.LogicaDeNegocio\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.AccesoADatos\\SeguridadWeb.AccesoADatos.csproj": {
+                "projectPath": "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.AccesoADatos\\SeguridadWeb.AccesoADatos.csproj"
+              },
+              "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.EntidadesDeNegocio\\SeguridadWeb.EntidadesDeNegocio.csproj": {
+                "projectPath": "C:\\Users\\HP\\source\\repos\\SeguridadWeb\\SeguridadWeb\\SeguridadWeb.EntidadesDeNegocio\\SeguridadWeb.EntidadesDeNegocio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
