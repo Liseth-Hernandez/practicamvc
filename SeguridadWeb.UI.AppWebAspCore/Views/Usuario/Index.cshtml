@@ -7,6 +7,11 @@
                 int[] tops = { 10, 20, 50, 100, 500, 1000, 10000, -1 };
                 int topActual = Convert.ToInt32(ViewBag.Top);
                 List<SeguridadWeb.EntidadesDeNegocio.Rol> roles = ViewBag.Roles as List<SeguridadWeb.EntidadesDeNegocio.Rol>; }
+ //agregue link de script jquery
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.22/jquery-ui.js"></script>
+<link rel="Stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/themes/redmond/jquery-ui.css" />
+
 <h1>Buscar</h1>
 <div class="row">
     <div class="col-md-12">
@@ -48,44 +53,15 @@
                         <input type="date" name="fechaRegistro" class="form-control" />
                     </div>
                 </div>
-                <!--Aqui inici el autocomplete-->
-                <!-- <div class="col-md-4">
-    <div class="form-group">
-        <label class="control-label">Rol</label>
-        <input type="text" name="idRol" class="form-control">
-                <!-- <select name="idRol" class="form-control">
-        <option selected value="0">SELECCIONAR</option>
-        <option selected value="0">SELECCIONAR</option>
-       <@@foreach (var item in roles)
-        {
-    <option value="<@@item.Id"><@@item.Nombre</option>}
-    </select>-->
-                <!--   </div>
-            </div>
-                <!--Aqui finaliza el autocomplete-->
-                <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-                <link rel="stylesheet" href="/resources/demos/style.css">
-                <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-                <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
-                <script>
-                    $(function () {
-                        var roles = [
-                            "cliente", "director", "limpieza", "profesor", "vendedor", "ADMINISTRADOR DEL SISTEMA", "Alumno"
-                        ];
-                        $("#idRol").autocomplete({
-                            source: roles
-                        });
-                    });
-                </script>
+               <!--Aqui inici el autocomplete-->
                 <div class="col-md-4">
                     <div class="form-group">
-                        <div class="ui-widget">
-                            <label for="idRol" class="control-label">Rol</label>
-                            <input id="idRol" name="idRol" class="form-control">
-                        </div>
+                        <label class="control-label">Rol</label>
+                        <input type="text" id="rolname" name="rolname" class="form-control" />
+                        <input type="hidden" id="hfRol" name="RolId"/>
                     </div>
                 </div>
-
+              <!--Aqui finaliza el autocomplete-->
                 <div class="col-md-2">
                     <div class="form-group">
                         <label class="control-label">Top</label>
@@ -197,4 +173,35 @@
             <li class="page-item" data-typepage="Next"><a class="page-link" href="#">Next</a></li>
         </ul>
     </div>
-</div>}
+</div>
+   //agregue codigo js
+              <script>
+                    $(function () {
+                        $("#rolname").autocomplete({
+                            source: function (req, response) {
+                                $.ajax({
+                                    url: "/Usuario/BuscarRolAutocomplete/",
+                                    data: { "rolname": req.term },
+                                    type: "POST",
+                                    success: function (data) {
+                                        console.log(data)
+                                        response($.map(data, function (item) {
+                                            return item.nombre;
+                                        }))
+                                    },
+                                    error: function (response) {
+                                        alert(response.responseText);
+                                    },
+                                    failure: function (response) {
+                                        alert(response.responseText);
+                                    }
+                                });
+                            },
+                            select: function (e, i) {
+                                $("#hfRol").val(i.item.val);
+                            },
+                            minLength: 1
+                        })
+                    })
+                </script>
+   }
