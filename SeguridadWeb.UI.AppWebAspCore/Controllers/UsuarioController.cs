@@ -37,6 +37,15 @@ namespace SeguridadWeb.UI.AppWebAspCore.Controllers
 
             return View(usuarios);
         }
+        //agregue codigo
+        public async Task<IActionResult> BuscarRolAutocomplete(string rolname)
+        {
+            var roles = new List<Rol>();
+            Rol rol = new Rol();
+            rol.Nombre = rolname;
+            roles = await RolDAL.Autocompletado(rol);
+            return Json(roles);
+        }
 
         // GET: UsuarioController/Details/5
         public async Task<IActionResult> Details(int id)
